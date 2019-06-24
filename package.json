@@ -1,10 +1,10 @@
 {
   "name": "kv-rc-module1",
-  "version": "1.0.0",
+  "version": "1.2.3",
   "description": "Test React Component",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src --out-file index.js",
+    "build": "webpack --display-error-details --mode development --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kavita Nambissan Ganguli",
@@ -14,11 +14,25 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "apollo-client": "^2.6.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.0.0",
+    "graphql": "^14.3.1",
+    "graphql-tag": "^2.10.1",
+    "isomorphic-style-loader": "^5.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-apollo": "^2.5.8",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-node-externals": "^1.7.2"
   },
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
   }
 }
